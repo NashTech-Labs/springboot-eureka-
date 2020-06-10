@@ -13,10 +13,12 @@ public class MockWebClient {
     @Autowired
     private WebClient.Builder webClientBuilder;
     
+    private final String baseUrl = "http://parent-demo-service";
+    
     public Mono<String> getUserFromWebClient(String clientId) {
         Mono<String> result;
         if (clientId.equalsIgnoreCase("admin")) {
-            result = webClientBuilder.baseUrl("http://parent-demo-service")
+            result = webClientBuilder.baseUrl(baseUrl)
                     .build()
                     .get()
                     .uri("/admin")
