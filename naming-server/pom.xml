@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.knoldus</groupId>
-	<artifactId>naming-Server</artifactId>
+	<artifactId>naming-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>naming-Server</name>
+	<name>naming-server</name>
 	<description>Demo project for Spring Boot, showcasing the usage of Eureka as a naming server</description>
 
 	<properties>
