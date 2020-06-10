@@ -11,7 +11,7 @@ This repository contains the template for using Eureka as a naming server with s
 5. To run these applications go to their directory in a terminal and run command **mvn clean spring-boot:run**.
 6. The **demo-service** would run at port **9000** & the **parent-demo-service** runs at port **8000**.
 7. Once all the instances are up you can see them on the Eureka UI.
-8. Now to see service registry work we need to create one more instance of the **parent-demo-service**, & let it run on port **8001**. We could set the configurations in our IDE to create another instance of the application. Refer to the steps mentioned in the blog: ***Add-Link-To-The-Blog***.
+8. Now to see service registry work we need to create one more instance of the **parent-demo-service**, & let it run on port **8001**. We could set the configurations in our IDE to create another instance of the application. Refer to the steps mentioned in the blog: https://blog.knoldus.com/service-registry-and-discovery/ .
 9. Once the instance is up it will register itself to the Eureka server and will be available on the UI as well.
 
 ## Steps to verify the application load balancing and service discovery
