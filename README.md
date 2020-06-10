@@ -19,4 +19,32 @@ This repository contains the template for using Eureka as a naming server with s
 1. You just need to hit the endpoint exposed by the service *demo-service* which is **localhost:9000/demo/greet** and it will internally make a call to the service *parent-demo-service*. 
 2. On multiple invocations of the endpoint mentioned above, you will notice that the port in the response message keeps on changing from ***8000 to 8001***. This proves that we were able to discover the new instance at port 8001 of *parent-demo-service* and that our application is working in a LoadBalanced manner.
 
-### That is all about the working of this repository, suggestions and improvements are most welcome. :shipit:
+## That is all about the working of this repository, suggestions and improvements are most welcome. :shipit:
+
+### Here are some of the images supporting the working and implementation.
+
+**-Naming server design:**
+
+![Image of Naming server](https://github.com/Prashant1293/spring-boot-eureka/blob/master/images/NamingServerFeature.png)
+
+**-Eureka Server UI**
+
+![Image of Eureka server](https://github.com/Prashant1293/spring-boot-eureka/blob/master/images/EurekaServer.png)
+
+**-Idea config setting for second instance of parent-demo-service**
+
+![Image of Idea conf](https://github.com/Prashant1293/spring-boot-eureka/blob/master/images/idea-conf-param.png)
+
+![Image of Idea conf](https://github.com/Prashant1293/spring-boot-eureka/blob/master/images/idea-conf-runner.png)
+
+![Image of Idea conf](https://github.com/Prashant1293/spring-boot-eureka/blob/master/images/idea-run-instance.png)
+
+**-Eureka server with all client instances up and running**
+
+![Image of Eureka server final](https://github.com/Prashant1293/spring-boot-eureka/blob/master/images/Eureka-all-instance-up.png)
+
+**-Results from Postman**
+
+![postman result 1](https://github.com/Prashant1293/spring-boot-eureka/blob/master/images/server-response-8000.png)
+
+![postman result 2](https://github.com/Prashant1293/spring-boot-eureka/blob/master/images/server-response-8001.png)
